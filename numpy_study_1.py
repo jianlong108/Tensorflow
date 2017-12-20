@@ -1,7 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from numpy import *
+import numpy as np
+from matplotlib import pyplot as plt
 
-a = arange(15).reshape(3, 5)
-print a
+x = np.arange(1,11)
+y =  2  * x +  5
+plt.title("Matplotlib demo")
+plt.xlabel("x axis caption")
+plt.ylabel("y axis caption")
+plt.plot(x,y)
+plt.show()
